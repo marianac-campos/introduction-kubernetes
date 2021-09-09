@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: portal-noticias
+spec:
+  containers:
+    - name: alura-container
+      image: aluracursos/portal-noticias:1
+        - containerPort: 80

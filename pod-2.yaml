@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: segundo-pod
+  labels:
+    app: segundo-pod
+spec:
+  containers:
+    - name: pod2-container
+      image: nginx:latest
+      ports:
+        - containerPort: 80
